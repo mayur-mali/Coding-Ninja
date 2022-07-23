@@ -127,6 +127,7 @@ main {
   width: 100%;
   min-width: 75%;
   padding: 10px;
+  margin-bottom: 5%;
 }
 
 aside {
@@ -357,6 +358,88 @@ aside {
   justify-content: center;
   align-items: center;
   font-size: 25px;
+}
+
+/* {Letest-English-section} */
+#letest-English-Section,
+#letest-Hindi-Section {
+  margin-top: 40px;
+}
+
+#letest-English-container,
+#letest-Hindi-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.letest-english-album {
+  display: flex;
+  width: 135px;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.letest-english-album:nth-child(1),
+.letest-hindi-album:nth-child(1) {
+  margin-left: 0;
+}
+.letest-english-album img,
+.letest-hindi-album img {
+  width: 100%;
+  height: 120px;
+  border-radius: 5px;
+}
+
+.english-album-info,
+.hindi-album-info {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.english-album-info h5,
+.hindi-album-info h5 {
+  margin-bottom: 3px;
+}
+
+.english-album-info h6,
+.hindi-album-info h6 {
+  color: #7e7e7e;
+}
+
+/* {player-Section} */
+
+#player-section {
+  background-color: #282828;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+}
+
+.player-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.main-player {
+  background-color: #f0bc10;
+  flex: 2;
+}
+.player-controls {
+  background-color: #4e3e07;
+  flex: 1;
+}
+.player-album {
+  display: flex;
+  flex: 1;
+}
+
+.player-album img {
+  width: 70px;
+  height: 70px;
 }
 
 /* @media queries section */
