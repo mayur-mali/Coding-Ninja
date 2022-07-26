@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://kit.fontawesome.com/b3348ae33f.js" crossorigin="anonymous"></script>
+    <title>Ninja Studio</title>
+</head>
+
+<body style="background-color: #0c1027">
+    <header>
+        <nav>
+            <div class="header-menu">
+                <a href="index.html">
+
+                    <img src="/assets/img/logo.png" class="logo" alt="Logo Image" />
+                </a>
+                <h2>Favourites</h2>
+            </div>
+            <div id="user-info-container">
+                <div id="search-bar">
+                    <div class="flex">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" name="search" placeholder="Search.." />
+                    </div>
+                    <i class="fa-solid fa-microphone-lines"></i>
+                </div>
+                <i class="fa-solid fa-bell"></i>
+                <div id="user-menu">
+                    <img src="https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+                        alt="user-img">
+                </div>
+            </div>
+
+            <i class="fa-solid fa-bars" onclick="myFunction()" id="hambuger-menu"></i>
+
+        </nav>
+        <div id="sidebar">
+
+        </div>
+    </header>
+
+    <!-- {Main content section } -->
+    <main>
+        <section id="music-content">
+            <div class="singal-artist">
+                <div class="artist-img">
+                    <img src="https://images.unsplash.com/photo-1597849457406-442b94770a95?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                        alt="artist-img">
+                </div>
+                <div class="artist-description">
+
+                    <div class="d-flex">
+                        <h2>Code Play</h2>
+                        <h6>851 Followers</h6>
+                    </div>
+                    <div>
+                        <h6>British Band</h6>
+                        <p>
+                            <h6>
+
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat delectus deserunt
+                                molestias eos nihil illum, voluptatibus ut minima consequatur et! Lorem ipsum dolor
+                                sit
+                                amet consectetur adipisicing elit. Aperiam asperiores autem in non pariatur! Vel
+                                quos
+                                quia totam necessitatibus dicta.
+                            </h6>
+
+                        </p>
+                    </div>
+                    <div>
+                        <button class="play-btn">
+                            Play All
+                        </button>
+                        <button class="follow-btn">
+                            Follow
+                        </button>
+                        <p>
+                            <h6>
+                                247 tracks | 12 B Albums
+                            </h6>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <aside>
+            <!-- {Queue Section} -->
+            <div class="queue-section">
+                <div class="d-flex">
+                    <h2>Similar Artist</h2>
+                    <h6>view all</h6>
+                </div>
+            </div>
+
+        </aside>
+    </main>
+    <section id="player-section">
+        <div class="player-container">
+            <div class="player-album">
+                <div>
+                    <img src="https://images.unsplash.com/flagged/photo-1573740144655-bbb6e88fb18a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
+                        alt="user-info">
+                </div>
+                <div class="album-info">
+                    <h5>Onism</h5>
+                    <h6>AUG 12, 2007</h6>
+                </div>
+                <div>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <div class="main-player">gdsfg</div>
+            <div class="player-controls">gsdf</div>
+        </div>
+    </section>
+</body>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("sidebar");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
+
+
+</html>
+
+
+<!-- mast-img: linear-gradient(to bottom, #e0faf9 10%, #d5ae95 80%, transparent 100%); -->
