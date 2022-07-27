@@ -34,6 +34,15 @@ body {
   align-items: center;
 }
 
+.space-x-10:nth-child(2n) i {
+  margin-left: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
 /* {navbar} */
 
 nav {
@@ -126,7 +135,7 @@ nav {
 }
 
 main {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   display: flex;
   color: white;
@@ -424,6 +433,14 @@ aside {
 
 /* {latest-section} */
 
+.letest-release-container {
+  padding: 10px 20px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-bottom: 30px;
+  gap: 10px 20px;
+}
+
 #latest-english-Section,
 #latest-hindi-Section {
   margin-top: 40px;
@@ -489,6 +506,7 @@ aside {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
+  color: whitesmoke;
 }
 
 .player-album {
@@ -498,7 +516,6 @@ aside {
 }
 
 .player-album-info {
-  color: white;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -516,7 +533,6 @@ aside {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  color: white;
 }
 .fa-solid {
   font-size: 25px;
@@ -566,8 +582,6 @@ aside {
 .recent-playlist-item {
   position: sticky;
   top: 30px;
-  min-height: 70vh;
-  height: auto;
 }
 
 .myplaylist-header {
@@ -595,8 +609,15 @@ aside {
   gap: 10px;
 }
 
-.myplaylist-item {
-  padding-bottom: 30%;
+.letest-album {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.letest-album img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
 }
 
 /* {custom-input-range-style} */
@@ -706,6 +727,106 @@ input[type="range"]::-ms-thumb {
   cursor: pointer;
 }
 
+/* {aside-section} */
+
+.myplaylist-section,
+.recent-playlist-item {
+  position: sticky;
+  top: 30px;
+}
+
+.myplaylist-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.plyalist-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  padding: 10px 0;
+}
+.plyalist-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.item-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* {singal artist} */
+
+.singal-artist {
+  background-color: #141b41;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.artist-img {
+  height: 300px;
+  flex: 1.2;
+  position: relative;
+}
+.artist-img img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+
+.artist-description {
+  flex: 2;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.artist-description:nth-child(2n) div {
+  margin-top: 20px;
+}
+
+.play-btn {
+  background-color: #21d4fd;
+  background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+
+  color: white;
+  padding: 5px 20px;
+  margin-bottom: 10px;
+}
+
+.follow-btn {
+  background: transparent;
+  color: white;
+  border: none;
+  margin-left: 30px;
+}
+
+.singal-artist-playlist .plyalist-item {
+  padding: 10px 20px;
+}
+.similar-artist-item {
+  margin-bottom: 20px;
+}
+.queue-section .similar-artist-item:nth-child(2n) div {
+  margin-top: 10px;
+}
+.singal-artist-playlist .recent-playlist-item:nth-child(even) div {
+  background-color: #1a1e33;
+  margin-top: 10px;
+}
+.singal-artist-playlist .recent-playlist-item:nth-child(odd) div {
+  background-color: #202439;
+  margin-top: 10px;
+}
+
 /* @media queries section */
 
 @media (max-width: 767px) {
@@ -732,13 +853,20 @@ input[type="range"]::-ms-thumb {
     height: 250px;
   }
 
-  .latest-release-container {
+  .letest-release-container {
     grid-template-columns: 100%;
-    width: 100%;
   }
 
-  .mood-container {
+  #mood-container {
     grid-template-columns: 50% 50%;
+  }
+
+  #latest-english-container,
+  #latest-hindi-container {
+    align-items: center;
+
+    justify-content: space-between;
+    gap: 10px;
   }
 
   .popular-artist-container,
@@ -763,6 +891,10 @@ input[type="range"]::-ms-thumb {
     grid-column: 3 / span 2;
   }
 
+  .letest-release-container {
+    width: 100%;
+  }
+
   .singal-artist {
     width: 100%;
   }
@@ -778,7 +910,7 @@ input[type="range"]::-ms-thumb {
     width: 250px;
     height: 230px;
   }
-  .mood-container {
+  #mood-container {
     grid-template-columns: 100%;
   }
 }
